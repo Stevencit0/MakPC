@@ -1,0 +1,221 @@
+.footer-container {
+
+    padding: 3rem 0 1rem;
+    margin-top: 2rem;
+
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 2.2fr 1px 1fr 1px 1fr;
+    gap: 40px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: start;
+}
+
+.column-left {
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+    box-shadow: none;
+    border-radius: 8px;
+}
+
+.company-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--primary-blue);
+    text-align: left;
+    width: 100%;
+}
+
+.description {
+    text-align: left;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: var(--dark-gray);
+    font-size: 1rem;
+    width: 100%;
+}
+
+.divider-container {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.divider {
+    border: none;
+    border-top: 2px dashed var(--divider-color);
+    width: 100%;
+    margin: 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 0;
+    width: 100%;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--primary-text);
+    padding: 8px 0;
+
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.contact-item::before {
+    content: '•';
+    color: var(--secondary-blue);
+    font-size: 1.5rem;
+    margin-right: 12px;
+    line-height: 0;
+}
+
+.vertical-divider {
+    width: 1px;
+    background: var(--secondary-blue);
+    height: 650px;
+    align-self: center;
+}
+
+.column-middle {
+    padding: 0 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    padding-left: 0;
+}
+
+.menu li a {
+    color: var(--primary-text);
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px 0;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.menu li a:hover {
+    color: var(--cyan-color);
+    border-bottom: 2px solid var(--yellow-accent);
+    transform: translateX(5px);
+}
+
+.column-right {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.social-section {
+    margin-bottom: 0;
+}
+
+.social-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--primary-blue);
+    text-align: left;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--secondary-blue), var(--primary-blue));
+    color: var(--white);
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-light);
+}
+
+.social-icon:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: var(--shadow-medium);
+}
+
+.social-icon.tiktok:hover { background: linear-gradient(135deg, #000000, #69C9D0); }
+.social-icon.facebook:hover { background: linear-gradient(135deg, #1877F2, #0D5AA3); }
+.social-icon.whatsapp:hover { background: linear-gradient(135deg, #25D366, #128C7E); }
+
+.payment-section {
+    margin-top: 0;
+}
+
+.payment-text {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: var(--primary-blue);
+    font-weight: 600;
+    text-align: left;
+}
+
+.payment-methods {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.payment-icon {
+    width: 60px;
+    height: auto;
+    border-radius: 8px;
+    padding: 8px;
+    background: white;
+    box-shadow: var(--shadow-medium);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.payment-icon:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-strong);
+    border-color: var(--yellow-accent);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--divider-color);
+    color: var(--medium-gray);
+    font-size: 0.95rem;
+    font-weight: 500;
+}

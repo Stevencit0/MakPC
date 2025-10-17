@@ -1,0 +1,131 @@
+header {
+    background: #ffffff;
+    padding: 1rem 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-top {
+
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 0;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: var(--dark-gray);
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+    transition: var(--transition);
+    position: relative;
+    white-space: nowrap;
+}
+
+nav ul li a:hover {
+    background: var(--white);
+    color: var(--cyan-color);
+    transform: translateY(-1px);
+}
+
+/* HEADER PRINCIPAL - DISEÑO MEJORADO */
+.header-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    min-height: 400px;
+}
+
+.description-section {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Letra-bonita {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    color: var(--primary-blue);
+    text-align: center;
+}
+
+.description-section p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: var(--dark-gray);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    max-width: 500px;
+}
+
+.highlight-text {
+    color: var(--cyan-color);
+    font-weight: 600;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.company-link {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.company-link strong {
+    color: var(--primary-blue);
+    font-size: 1.5rem;
+    padding-bottom: 4px;
+    transition: var(--transition);
+    font-weight: 700;
+}
+
+.company-link:hover strong {
+    color: var(--cyan-color);
+
+}
+
+.logo-section {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* LOGO MÁS GRANDE Y MEJOR CENTRADO */
+.header-logo {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    animation: logoEntrance 1.2s ease-out, logoPulse 4s ease-in-out infinite 2s;
+    transition: var(--transition);
+
+}
+
+.header-logo:hover {
+    transform: scale(1.05);
+}
